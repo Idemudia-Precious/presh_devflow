@@ -13,6 +13,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const inter = localFont({
+  src: "./fonts/inter.woff",
+  variable: "--font-space-grotesk",
+  weight: "100 200 300 400 500 700 700 900",
+});
+const spaceGrotesk = localFont({
+  src: "./fonts/SpaceGrotesk.woff",
+  variable: "--font-space-grotesk",
+  weight: "300 400 500 700 700 900",
+});
 
 export const metadata: Metadata = {
   title: "DevFlow",
@@ -27,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
       </body>

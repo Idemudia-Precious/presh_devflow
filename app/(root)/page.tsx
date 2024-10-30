@@ -7,9 +7,7 @@ const Home = async () => {
 
   return (
     <>
-      <h1 className="text-3xl text-violet-700 font-black">
-        Welcome to the world of NextJS
-      </h1>
+      <h1 className="text-3xl">Home</h1>
     </>
   );
 };
